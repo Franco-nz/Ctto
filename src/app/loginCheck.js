@@ -10,6 +10,7 @@ const modal = new bootstrap.Modal(document.getElementById('Modal'))
 
 console.log("check si hay user")
 
+
 export const loginCheck = user => 
 {
     if (user && modal._isShown) 
@@ -20,15 +21,18 @@ export const loginCheck = user =>
 
     document.addEventListener('click', (e) => 
     {
+        
         if (e.target.id === 'linkto') 
         {
             if (user) 
             {
                 window.open('http://ctto.com.ar/', '_blank')
                 console.log("hay userrr")
-            } else {
-                modal.show()
-                console.log("no hay ussser")
+            } else 
+            {
+                 modal.show()
+                console.log("no hay ussser----")
+                console.log(user)
             }
         }
     })

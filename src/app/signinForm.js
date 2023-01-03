@@ -27,6 +27,8 @@ signInForm.addEventListener('submit', async e =>
     const password = signInForm['signup-password'].value;
 
     console.log("vagzgz")
+    console.log(email)
+    console.log(password)
 
 
 
@@ -41,27 +43,35 @@ signInForm.addEventListener('submit', async e =>
         console.log(credentials)
         console.log("vaaaalidaddo")
 
-        const modal = bbootstrap.Modal(document.getElementById('Modal'))
+        console.log(credentials.user)
 
-        modal.hide()
 
-        console.log("validaddddddddddo")
+
+        // const modal = bbootstrap.Modal(document.getElementById('Modal'))
+        // modal.hide()
+
+        //  const modal = bootstrap.Modal.getInstance(document.querySelector('#Modal'))
+        //  modal.hide()
 
         showMessage('Welcome' + credentials.user.email) 
 
-        console.log("validaddddddddddddddddddddddddo")
+        console.log("Welcome    ----> " +  credentials.user.email)
+
+
+        location.reload()
+
+
     } 
     catch (error) 
     {
         if (error.code === 'auth/wrong-password')
         {
             showMessage ('Wrong pass' , error)
-                     console.log("zzzzzzz")
         }
         else if(error.code === 'user not found' , error)
         {
             // showMessage ('User not found--' , error)
-                    // showMessage ('Wrong p5d5' , error)
+                    showMessage ('Datos incorrectos. Intente de nuevo' , error)
                     // showMessage ('Wrong pass' , error)
         }
         else
@@ -74,6 +84,9 @@ signInForm.addEventListener('submit', async e =>
         // console.log(error)
         // console.log("ya ocupado")
     }
+
+
 })
+
 
 

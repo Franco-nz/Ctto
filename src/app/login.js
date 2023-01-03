@@ -18,7 +18,7 @@ login.addEventListener('submit', async (e) => {
     const email = login['signup-email'].value                   //.value   ----> pq solo quiero lo que se tipeó
     const password = login['signup-password'].value
 
-    console.log(email, password + "---")
+    console.log(email, password + "-   -    -")
 
     //createUserWithEmailAndPassword el primer parámetro que espera, es la conexión de la autenticación (por eso fué exportado desde firbase.js)
     // le paso entonces la configuración
@@ -58,17 +58,19 @@ login.addEventListener('submit', async (e) => {
     }
 
     //si algo va mal
+    // en este caso, como tengo crear y loguear juntos, siempre tengo el caso de que el email ya esta en uso
     catch (error) 
     {
         console.log(989898989 + " us++++++----++++")
-        // console.log(error.message)
-        // console.log(error.code)
+
+        console.log(error.message)
+        console.log(error.code)
 
         // manejar el error en específico si el user ya existe
 
 
 
-        // if(error.code === 'auth/email-already-in-use' && password === userCredentials.user.email )
+        // if(error.code === 'auth/email-already-in-use' && password === Credentials.user.email )
         // {
         //       showMessage("Welcome " + userCredentials.user.email)
 
@@ -82,19 +84,24 @@ login.addEventListener('submit', async (e) => {
 
         // }
 
+
+
+        //-----------------
+
         if (error.code === 'auth/email-already-in-use') 
         {
-            //  showMessage("Email en uso", "errorr")
+               // showMessage("Email en uso", "errorr")
         }
 
         // manejar el error en específico si la dirección email no es correcta
         else 
         {
-            if (error.code === 'auth/invalid-email') 
+        if (error.code === 'auth/invalid-email') 
+        {
+        showMessage("Invalid email", "error")
+        }
+            else 
             {
-                showMessage("Invalid email", "error")
-            }
-            else {
                 // manejar el error en específico si el pass no es adecuado
                 if (error.code === 'auth/weak-password') {
                     showMessage("Password débil", "error")
@@ -105,6 +112,15 @@ login.addEventListener('submit', async (e) => {
                 }
             }
         }
+
+
+
+
+        //-----------------
+
+
+
+
 
     }
 
