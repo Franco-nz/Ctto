@@ -12,7 +12,6 @@ import './app/signinForm.js'
 
 
 
-
 //si ejecuto esta función, lo pirmero que va a recibir es el parámetro de donde está nuestra conexión con la autenticacion (espera el parámetro auth)
 //entonces tengo que importar auth, linea 5. una vez le paso esta funcion, el conde me envia una función asíncrona, y esta función me va a devolver datos, en este caso, el dato user
 onAuthStateChanged(auth, async(user) =>
