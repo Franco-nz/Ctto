@@ -207,21 +207,22 @@ body
   box-shadow: 10px 10px 8px rgb(12, 12, 12);
 }
 
-.footer-links a
+.footer-container a
 {
   color: #dfd7d7;
-  padding: 5px 4px;
+  /* padding: 0px 12px; */
+  font-size: 18px;
 }
 
 
 
 .footer-container
 {
-  padding: 60px 0;
+  padding: 30px 0;
   display: grid;
 
-  /* distribuoir en 6 columnas */
-  grid-template-columns: repeat(6, 1fr);
+  /* distribuoir en 3 columnas */
+  grid-template-columns: repeat(3, 1fr);
 
   /* espaciado entre las columnas de x cantidad de px */
   gap: 10px;
@@ -231,38 +232,15 @@ body
 
   position: relative;
   margin: auto;
-  width: 75%;
+  width: 70%;
 }
 
-.footer-container h3
-{
-  padding: 10px 0;
-}
-
-.footer-container p
-{
-  color: #f1eaea;
-  font-size: 14px;
-}
-
-  /* listas */
-.footer-container ul
-{
-  margin: 0 0;
-  list-style-type: none;
-}
-
-  /* separar los elementos de las listas */
-.footer-container ul li
-{
-  line-height: 2;
-}
 
 /* seccion social */
 .contenedor-icono
 {
   padding: 6px;
-  text-align: right;
+  text-align: left;
 }
 
 .social
@@ -272,7 +250,29 @@ body
   color: #fff;
   width: 1.75vw;
   height: 1.75vw;
+  margin-left:-11.5%;
 }
+
+.logo
+{
+  width: 30%;
+}
+
+.info
+{
+  text-align: left;
+  color: #f1eaea;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 14.2px;
+
+}
+
+
+
+
 
 .footer
 {

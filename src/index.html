@@ -14,19 +14,19 @@
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-        <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="./styless.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./styless.css">
 
-        <!-- CUSTOM JS -->
-        <script src="./main.js" type="module"> </script> 
+    <!-- CUSTOM JS -->
+    <script src="./main.js" type="module"> </script>
 
-        <!--  script de firebase
+    <!--  script de firebase
         <script type="module"> </script> -->
 
     <!-- FONT .... -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,75 +50,79 @@
 
 
     <!-- Modal -->
-<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- agrego formulario  con labels e inputs-->
+                    <form id="login-form">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="signup-password" class="form-control mb-3" placeholder="********"
+                            required>
+
+                        <button type="submit" class="btn btn-primary w-100 mb-4">
+                            Crear / Ingresar con usuario de Email y contraseña
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
         </div>
-
-        <div class="modal-body">
-
-            <!-- agrego formulario  con labels e inputs-->
-          <form id="login-form">
-
-            <label for="email">Email:</label>
-            <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="signup-password" class="form-control mb-3" placeholder="********" required>
-
-            <button type="submit" class="btn btn-primary w-100 mb-4">
-                Crear / Ingresar con usuario de Email y contraseña
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
     </div>
-  </div>
 
 
     <!-- banner de arriba -->
     <div class="container">
         <nav class="banner">
-            <a href="https://www.crosetto.com.ar/"rel="noopener noreferrer"> <img src="/IMG/Crosetto logo.PNG" alt="Crosetto logo" class="nav-crosetto"> 
+            <a href="https://www.crosetto.com.ar/" rel="noopener noreferrer"> <img src="/IMG/Crosetto logo.PNG"
+                    alt="Crosetto logo" class="nav-crosetto">
             </a>
 
-            <!-- <a href="http://ctto.com.ar/" rel="noopener noreferrer"> --> <img src="/IMG/Ctto_LOGO-WHITE.svg" alt="Ctto logo" class="nav-crosetto"> 
+            <!-- <a href="http://ctto.com.ar/" rel="noopener noreferrer"> --> <img src="/IMG/Ctto_LOGO-WHITE.svg"
+                alt="Ctto logo" class="nav-crosetto">
             </a>
-        </nav>  
+        </nav>
     </div>
 
 
-        <!-- banner principal, centro de la pestaña, donde se ubbican las imágenes con los links para ver las demas-->
+    <!-- banner principal, centro de la pestaña, donde se ubbican las imágenes con los links para ver las demas-->
     <div class="seccion-informacion">
         <h2 id="linkto">Demos</h2>
     </div>
 
-    
+
     <div class="seccion-equipos">
 
         <figure>
 
             <img id="linkto" src="/img/minni.PNG" alt="News - 1" class="button-13">
-            
-                <h3 class="capa1" id="linkto" >Miniload</h3>
+
+            <h3 class="capa1" id="linkto">Miniload</h3>
 
         </figure>
 
-        
+
         <figure>
 
 
-        <img id="linkto" src="/IMG/trans.PNG" alt="News - 1" class="button-13">
-            
-        <!-- <div class="capa1"> -->
-            <h3 class="capa1" id="linkto" >Transelevador</h3>
-        <!-- </div>  -->
+            <img id="linkto" src="/IMG/trans.PNG" alt="News - 1" class="button-13">
+
+            <!-- <div class="capa1"> -->
+            <h3 class="capa1" id="linkto">Transelevador</h3>
+            <!-- </div>  -->
 
         </figure>
 
@@ -127,68 +131,100 @@
 
 
 
+    <div class="footer-container">
 
-    <div class="footer-links">
-        <div class="footer-container">
-            <div class="contenedor-icono">
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="social" viewBox="-7 -6 30 30">
-                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  </svg>
+        <div class="info">
+
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="social" viewBox="-7 -6 30 30">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
             </div>
-            <ul>
-                <li>
-                        <a>
-                        DIRECCIÓN
-                        </a>
-                </li>
-                <li>
-                    <p>Sector E Lote 1 Parque Industrial,</p>
-                </li>
-                <li>
-                    <p>
-                        Reconquista, Santa Fe
-                    </p>
-                </li>
-            </ul>
 
 
-            <div class="contenedor-icono">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social" viewBox="-7 -6 30 30">
-                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                  </svg> 
+
+            <div>
+                <a>
+                    DIRECCIÓN
+                </a>
+
+
+
+                <p>
+                    Sector E Lote 1 Parque Industrial,
+                </p>
+
+                <p>
+                    Reconquista, Santa Fe
+                </p>
             </div>
-            <ul>
-                <li>
-                    <a>
+
+
+
+        </div>
+
+
+        <div class="info">
+
+            <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social"
+                    viewBox="-7 -6 30 30">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+
+            </div>
+
+            <div>
+
+                <a>
                     TELÉFONO
-                    </a>
-                </li>
-                <li>
-                    <p>
-                        + 54  03482  421703
-                    </p>
-                </li>
-            </ul>
+                </a>
 
-            <div class="contenedor-icono">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social" viewBox="-7 -6 30 30">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                  </svg>
+                <p>
+                    + 54 03482 421703
+                </p>
+
             </div>
-            <ul>
-                <li>
 
-                    <a>
-                        EMAIL
-                    </a>
-                </li>
-                <li>
-                    <p>
-                        info@crosetto.com.ar
-                    </p>
-                </li>
-            </ul>
+
+        </div>
+
+
+        <div class="info">
+
+
+            <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social"
+                    viewBox="-7 -6 30 30">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                </svg>
+
+            </div>
+
+
+
+
+            <div>
+
+                <a>
+                    EMAIL
+                </a>
+
+                <p>
+                    info@crosetto.com.ar
+                </p>
+
+            </div>
+
+
+
 
         </div>
 
@@ -204,7 +240,7 @@
 
     <!-- código js del módulo -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    
+
 </body>
 
 </html>
