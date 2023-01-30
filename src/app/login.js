@@ -11,7 +11,8 @@ import { showMessage } from './showMessage.js'
 const login = document.querySelector('#login-form')
 
 // cuando envien el evento submit, voy a recibir info de este evento
-login.addEventListener('submit', async (e) => {
+login.addEventListener('submit', async (e) => 
+{
     e.preventDefault()
 
     // extraer de loginform, el email y el pass, y los guard en constantes que las identifiquen
@@ -26,7 +27,8 @@ login.addEventListener('submit', async (e) => {
     // le paso password
     //estos datos van a firebase para ser autenticados
 
-    try {
+    try 
+    {
         console.log(989898989 + " us------")
 
 
@@ -103,10 +105,12 @@ login.addEventListener('submit', async (e) => {
             else 
             {
                 // manejar el error en específico si el pass no es adecuado
-                if (error.code === 'auth/weak-password') {
+                if (error.code === 'auth/weak-password') 
+                {
                     showMessage("Password débil", "error")
                 }
-                else if (error.code) {
+                else if (error.code) 
+                {
                     showMessage(error.message, error)
                     // alert('Algo salió mal')
                 }
